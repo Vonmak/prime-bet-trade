@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  text-decoration: none;
+}
+body {
+  color: #253242;
+  background-color: #f0f8ff;
+}
+/*header section*/
+
+/*header section*/
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color:  #45a29e;
+}
+
+.top-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px; /* Set to your preferred width */
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.top-right {
+  display: flex;
+  gap: 20px;
+}
+
+.bx-menu {
+  font-size: 50px;
+  cursor: pointer;
+}
+.bxs-sun{
+  color: yellow;
+}
+.bxs-moon{
+  color: #253242;
+}
+.top-right a {
+  text-decoration: none;
+  color: #45a29e;
+}
+
+#logout {
+  background-color: #f00;
+  color: #fff;
+  border-radius: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#register {
+  background-color: #45a29e;
+  color: #fff;
+  border-radius: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 230px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #45a29e;
+  overflow-x: hidden;
+  padding-top: 40px;
+}
+.main-content {
+  display: grid;
+  padding-top: 10px;
+  grid-template-columns: 15% auto 25%;
+  color: #fff;
+  gap: 15px;
+}
+.contain {
+  margin-left: 300px;
+  margin-top: 100px;
+}
+
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a,
+.dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffff;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover,
+.dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: #45a29e;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #45a29e;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.bx-caret-down {
+  float: right;
+  padding-right: 8px;
+  color: #f1f1f1;
+}
+
+.user-list {
+  margin: 20px auto;
+  width: 80%;
+  border-collapse: collapse;
+}
+
+.user-list th,
+.user-list td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.user-list th {
+  background-color: #f2f2f2;
+}
+
+.user-list tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.status-active {
+  color: green;
+}
+
+.status-unverified {
+  color: orange;
+}
+
+.status-banned {
+  color: red;
+}
+
+@media (max-width: 733px) {
+  #menu1-icon {
+    color: #f6f6f6;
+    font-size: 25px;
+    display: block;
+  }
+  .sidenav {
+    display: none;
+  }
+  .sidenav.active {
+    display: block;
+  }
+  .contain {
+    margin-left: 0px;
+    margin-top: 100px;
+  }
+  .user-list th,
+  .user-list td {
+    font-size: 14px;
+  }
+}
